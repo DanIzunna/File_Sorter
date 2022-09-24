@@ -65,4 +65,12 @@ for file_ in list_:
     elif os.path.exists(path+'/'+'Html') == False:      
         os.makedirs(path+'/'+'Html')
         shutil.move(path+'/'+file_, path+'/'+'Html'+ '/'+ file_)
+    
+    elif ext in ['mp3', 'ogg', 'wav', 'aac', 'flac'] and os.path.exists(path+'/'+'Music'):
+        print('Moving Music files to %s/Music'%path)
+        shutil.move(src_path, destination+'/'+ 'Music'+'/'+file_)
+
+    elif os.path.exists(path+'/'+'Music') == False:     
+        os.makedirs(path+'/'+'Music')
+        shutil.move(path+'/'+ file_, path + '/'+ 'Music'+'/'+file_)
 
