@@ -66,6 +66,15 @@ def sorter():
             elif ext in ['zip', 'rar', '7z', 'gz']:      
                 os.makedirs(destination+'/'+'Archive')
                 shutil.move(src_path, destination+'/'+ 'Archive'+'/'+file_)
+            
+             #Music
+            elif ext in ['mp3', 'ogg', 'wav', 'aac', 'flac'] and os.path.exists(destination+'/'+'Music'):
+                print('Moving Music files to %s/Music'%destination)
+                shutil.move(src_path, destination+'/'+ 'Music'+'/'+file_)
+            
+            elif ext in ['mp3', 'ogg', 'wav', 'aac', 'flac']:      
+                os.makedirs(destination+'/'+'Music')
+                shutil.move(src_path, destination+'/'+ 'Music'+'/'+file_)
 
             else:
                 ('No file to Move!!!')
