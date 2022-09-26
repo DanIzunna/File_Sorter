@@ -4,9 +4,9 @@ import shutil
 
 def sorter():
     try:
-        user_source = input('Enter your PC name: ')
-        source = input('Enter the source directory. e.g Downloads: ')
-        path = 'C:/Users/%s/%s'%(user_source, source)
+        pc_name = input('Enter your PC name: ')
+        path = input('Enter the source directory. e.g C:/Users/My_PC/Downloads: ')
+        destination = 'C:/Users/%s'%pc_name
 
         # path = 'C:/Users/USER/Downloads'
         # destination = 'C:/Users/USER/Desktop/'
