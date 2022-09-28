@@ -22,20 +22,20 @@ def sorter():
             src_path = os.path.join(path, file_)
             
                 #Videos
-            if ext in ['mp4', 'mkv', '3gp', 'mov', 'avi', 'webm', 'flv', 'wmv'] and os.path.exists(destination+'/'+'Videos'):
+            if ext in ['mp4', 'mkv', '3gp', 'mov', 'avi', 'webm', 'flv', 'wmv', 'vob'] and os.path.exists(destination+'/'+'Videos'):
                 print('Moving Video files to %s/Videos'%destination)
                 shutil.move(src_path,destination+'/'+'Videos'+ '/'+file_)
                 
-            elif ext in ['mp4', 'mkv', '3gp', 'mov', 'avi', 'webm', 'flv', 'wmv']:
+            elif ext in ['mp4', 'mkv', '3gp', 'mov', 'avi', 'webm', 'flv', 'wmv', 'vob']:
                 os.makedirs(destination+'/'+'Videos')
                 shutil.move(src_path, destination+'/'+'Videos'+ '/'+file_)
 
                 #Pictures
-            elif ext in ['png', 'jpg', 'bmp', 'jpeg', 'gif','ico', 'jpe', 'webp'] and os.path.exists(destination+'/'+'Pictures'):
+            elif ext in ['png', 'jpg', 'bmp', 'jpeg', 'gif','ico', 'jpe', 'webp', 'svg'] and os.path.exists(destination+'/'+'Pictures'):
                 print('Moving Image files to %s/Pictures'%destination)
                 shutil.move(src_path, destination+'/'+ 'Pictures'+'/'+file_)
             
-            elif ext in ['png', 'jpg', 'bmp', 'jpeg', 'gif','ico', 'jpe', 'webp']:    
+            elif ext in ['png', 'jpg', 'bmp', 'jpeg', 'gif','ico', 'jpe', 'webp', 'svg']:    
                 os.makedirs(destination+'/'+'Pictures')
                 shutil.move(src_path, destination+'/'+ 'Pictures'+'/'+file_)
                 
