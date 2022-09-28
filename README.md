@@ -13,7 +13,7 @@ Enter your PC Name: MY_PC
 
 Enter the Source Directory: C:\Users\MY_PC\Desktop\test
 
-#It moved evertthing based on file type to C:\MY_PC\<file_type>
+#It moves everthing based on file type to C:\MY_PC\<file_type>
 
 Moving Image files to C:\Users\MY_PC\Pictures
 
